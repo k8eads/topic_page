@@ -15,20 +15,20 @@ html {
 nav {
     display: flex; 
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
     padding: .5em;
     background-color: darkslategray;
     
 }
-nav div {
+.logo-links {
     flex: 1;
     font-size: 2.4em;
     font-family: 'Roboto Condensed', sans-serif;
 }
-nav a{
+.nav-links a {
     margin-right: 4em;
 }
-nav a:last-of-type {
+.nav-links a:last-of-type {
     margin-right: .5em;
 }
 nav img{
