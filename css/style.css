@@ -1,3 +1,7 @@
+:root {
+    --fg: #121212;
+}
+
 html {
 	font-size: 62.5%;
     background-color: grey;
@@ -10,10 +14,23 @@ html {
     font-size: 16px; */
 }
 
+body {
+    font-family: 'Cabin', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.15;
+}
+
+h2 {
+    font-weight: bolder;
+    font-size: 2.4rem;
+    font-family: 'Roboto Condensed', sans-serif;
+ }
 
 img {
 width: 100%; 
 height:auto;
+border-radius: .5rem
 }
 
 svg {
@@ -29,24 +46,28 @@ nav {
     align-items: center;
     padding: .5em;
     background-color: darkslategray;
-    
-}
-.logo-links {
-    flex: 1;
-    font-size: 2.4em;
     font-family: 'Roboto Condensed', sans-serif;
-}
-.nav-links a {
-    margin-right: 4em;
-}
-.nav-links a:last-of-type {
-    margin-right: .5em;
+
+    
 }
 nav img{
     width: 8rem; 
     height: auto;
     vertical-align: middle;
 }
+
+.logo-links {
+    flex: 1;
+    font-size: 2.4rem;
+}
+.nav-links a {
+    margin-right: 4em;
+    font-size: 1.6rem;
+}
+.nav-links a:last-of-type {
+    margin-right: .5em;
+}
+
 
 .link {
     font-size: 1.6rem;
@@ -63,14 +84,43 @@ nav img{
     opacity: 1;
 } 
 
-section {
-    display: flex;
+
+main {
+    max-width: 78vw;
+    padding: 2rem;
+    margin: auto;
 }
-.album {
+section {
+    display: grid;
+    margin: 3rem auto;
+    margin: auto;
+    grid-gap: 3rem;
+}
+
+section.odd {
+    grid-template-columns: 4fr 8fr;
+}
+
+section.even {
+    grid-template-columns: 8fr 4fr;
+}
+div.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+div.album {
+    justify-items: center;
+}
+img.album {
     height: auto;
     width: 520px;
 }
 
+.photo {
+    height: auto;
+    width: 450px;
+}
 
 
 
@@ -88,10 +138,7 @@ footer{
         flex-direction: column; 
         gap: 1rem;
     }
+    section.even, section.odd {
+        grid-template-columns: 1fr;
+    }
 }
-
-
-
-   
-
-   
