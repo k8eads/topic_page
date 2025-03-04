@@ -33,7 +33,11 @@ svg {
     fill: currentColor;
     pointer-events: none;
 }
-
+hr {
+    color: #222;
+    background-color: #222;
+    height: .25rem;
+}
 /*--Nav Styles--*/
 nav, footer{
     background-color: #222;
@@ -74,13 +78,13 @@ nav img{
     font-size: 1.6rem;
 }
 
-.logo {
+/* .logo {
     transition: 0.3s ease-in-out;
     opacity: .7;
 }  
 .logo:hover {
     opacity: 1;
-} 
+}  */
 
 /*--Main Styles--*/
 main {
@@ -105,6 +109,21 @@ div.text {
     flex-direction: column;
     justify-content: center;
 }
+
+div.photo{
+    display: flex;
+    align-items:center;
+}
+
+div.audio-clips{
+
+}
+
+div.buttons{
+
+}
+
+
 
 /*-- Media Queries --*/
 
