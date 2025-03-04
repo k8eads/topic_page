@@ -77,15 +77,16 @@ nav img{
 }
 .linka {
     font-size: 1.6rem;
+    color: #FADB00;
 }
 
-/* .logo {
+.logo {
     transition: 0.3s ease-in-out;
     opacity: .7;
 }  
 .logo:hover {
     opacity: 1;
-}  */
+} 
 
 /*--Main Styles--*/
 main {
@@ -124,6 +125,8 @@ div.audio-clips{
 }
 figure{
     padding-bottom: 1rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bolder;
 }
 div.buttons{
     display: flex;
@@ -135,12 +138,11 @@ button{
     padding: 1rem 2rem;
     display: inline-block;
     background-color: #222;
-    color: whitesmoke;
+    color: #FADB00;
     margin: 20px;
-    width: 180px;
+    width: 120px;
     height: 50px;
     border-radius: 10px;
-    position: relative;
     overflow: hidden;
     text-decoration: none;
     text-transform: uppercase;
